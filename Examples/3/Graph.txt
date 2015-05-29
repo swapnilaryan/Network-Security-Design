@@ -1,0 +1,42 @@
+graph structs 
+{
+rotate=180;
+size="5,5";
+struct1 [shape=box,peripheries=2,color=darkgreen,width="0.3", style="filled",fontcolor=white,label="1"];
+struct2 [shape=box,peripheries=2,color=darkgreen,width="0.3", style="filled",fontcolor=white,label="2"];
+struct3 [shape=box,peripheries=2,color=darkgreen,width="0.3", style="filled",fontcolor=white,label="3"];
+struct4 [shape=box,peripheries=2,color=darkgreen,width="0.3", style="filled",fontcolor=white,label="4"];
+
+struct1--structr1;
+struct2--structr1;
+structr1--structips1--structr2--structids1--structr3;
+
+structr3--struct1;
+
+structr3--struct3;
+
+structr3--struct4;
+struct4--structr4;
+structr4--structips2--structr5;
+
+structr5--struct2;
+
+structr5--struct3;
+struct3--structr6;structr6--structf1--structr7;
+
+structr7--struct1;
+structr1 [ shape=circle,style=filled,color=black,width="0.3",label="X",fontcolor="white"]; 
+structr2 [ shape=circle,style=filled,color=black,width="0.3",label="X",fontcolor="white"]; 
+structr3 [ shape=circle,style=filled,color=black,width="0.3",label="X",fontcolor="white"]; 
+structr4 [ shape=circle,style=filled,color=black,width="0.3",label="X",fontcolor="white"]; 
+structr5 [ shape=circle,style=filled,color=black,width="0.3",label="X",fontcolor="white"]; 
+structr6 [ shape=circle,style=filled,color=black,width="0.3",label="X",fontcolor="white"]; 
+structr7 [ shape=circle,style=filled,color=black,width="0.3",label="X",fontcolor="white"]; 
+structf1 [shape=record,label="{ {| |}|{| |} }",style="filled",fillcolor="orange:brown"]; 
+structips1 [ shape=rectangle,style="rounded,filled",color=lightblue,width="0.3",label="IPSec"]; 
+structips2 [ shape=rectangle,style="rounded,filled",color=lightblue,width="0.3",label="IPSec"]; 
+structids1 [ shape=polygon,color=red,fontcolor=white,style="filled",width="0.3" sides=10,peripheries=2,label="IDS"]; 
+{rank=same;structr1,structr2,structr3,structr4,structr5,structr6,structr7};
+{rank=same;struct1,struct2,struct3,struct4};
+
+}

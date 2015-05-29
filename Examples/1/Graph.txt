@@ -1,0 +1,51 @@
+graph structs 
+{
+rotate=180;
+size="5,5";
+struct1 [shape=box,peripheries=2,color=darkgreen,width="0.3", style="filled",fontcolor=white,label="1"];
+struct2 [shape=box,peripheries=2,color=darkgreen,width="0.3", style="filled",fontcolor=white,label="2"];
+struct3 [shape=box,peripheries=2,color=darkgreen,width="0.3", style="filled",fontcolor=white,label="3"];
+struct4 [shape=box,peripheries=2,color=darkgreen,width="0.3", style="filled",fontcolor=white,label="4"];
+struct5 [shape=box,peripheries=2,color=darkgreen,width="0.3", style="filled",fontcolor=white,label="5"];
+struct6 [shape=box,peripheries=2,color=darkgreen,width="0.3", style="filled",fontcolor=white,label="6"];
+
+struct1--structr1;
+struct5--structr1;
+struct6--structr1;structr1--structf1--structr2;
+
+structr2--struct2;
+
+structr2--struct3;
+
+structr2--struct4;
+struct4--structr3;structr3--structf2--structr4;
+
+structr4--struct2;
+
+structr4--struct3;
+struct2--structr5;structr5--structf3--structr6;
+
+structr6--struct3;
+
+structr6--struct4;
+struct3--structr7;structr7--structf4--structr8;
+
+structr8--struct4;
+
+structr8--struct5;
+structr1 [ shape=circle,style=filled,color=black,width="0.3",label="X",fontcolor="white"]; 
+structr2 [ shape=circle,style=filled,color=black,width="0.3",label="X",fontcolor="white"]; 
+structr3 [ shape=circle,style=filled,color=black,width="0.3",label="X",fontcolor="white"]; 
+structr4 [ shape=circle,style=filled,color=black,width="0.3",label="X",fontcolor="white"]; 
+structr5 [ shape=circle,style=filled,color=black,width="0.3",label="X",fontcolor="white"]; 
+structr6 [ shape=circle,style=filled,color=black,width="0.3",label="X",fontcolor="white"]; 
+structr7 [ shape=circle,style=filled,color=black,width="0.3",label="X",fontcolor="white"]; 
+structr8 [ shape=circle,style=filled,color=black,width="0.3",label="X",fontcolor="white"]; 
+structf1 [shape=record,label="{ {| |}|{| |} }",style="filled",fillcolor="orange:brown"]; 
+structf2 [shape=record,label="{ {| |}|{| |} }",style="filled",fillcolor="orange:brown"]; 
+structf3 [shape=record,label="{ {| |}|{| |} }",style="filled",fillcolor="orange:brown"]; 
+structf4 [shape=record,label="{ {| |}|{| |} }",style="filled",fillcolor="orange:brown"]; 
+{rank=same;structr1,structr2,structr3,structr4,structr5,structr6,structr7,structr8};
+{rank=same;struct1,struct2,struct3,struct4,struct5,struct6};
+
+}

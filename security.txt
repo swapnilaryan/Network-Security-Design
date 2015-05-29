@@ -1,0 +1,7 @@
+
+
+Placing security between ( 1,2 ) -- [ 2,3,4,1,3,4 )
+
+Placing security between ( 4 ) -- [ 2,3,2,3 )
+
+Placing security between ( 3 ) -- [ 2,3,4,1 )
